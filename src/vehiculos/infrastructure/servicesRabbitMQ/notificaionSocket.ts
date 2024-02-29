@@ -4,7 +4,7 @@ import { Iservice } from "../../app/services/IService";
 
 export class ServicesNotification implements Iservice {
   sendMessage2(vehiculo: Vehiculo): string {
-    const socket = io("http://localhost:3005"); 
+    const socket = io("https://server-z88w.onrender.com"); 
 
     socket.on("connect", () => {
       console.log("Connected to server");
